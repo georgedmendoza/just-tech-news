@@ -16,6 +16,7 @@ router.get('/', (req, res) => {
 
 router.get('/:id', (req, res) => {
   User.findOne({
+    // so password doesn't show
     attributes: { exclude: ['password'] },
     where: {
       id: req.params.id
