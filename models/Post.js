@@ -1,4 +1,4 @@
-const { Model, DataTypes, BLOB } = require('sequelize');
+const { Model, DataTypes, Vote } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // create our Post model
